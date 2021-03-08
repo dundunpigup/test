@@ -1,0 +1,308 @@
+     1	16:35	set notify
+     2	16:35	/SASHome/SASAppProd/M2/SASFoundation/9.4/sasexe/sas test.sas -log test.log -print test.lst &
+     3	16:36	exit
+     4	15:35	cd /SASHome/ccu04/Non-Cat/thomasmo/
+     6	15:35	ls
+     7	15:35	ls -lth
+    10	15:36	find . -name "*.sas" --exec grep -Hi "duns_data"
+    11	15:36	find . -name "*.sas" --exe grep -Hi "duns_data"
+    12	15:37	find . -name "*.sas" -exec grep -Hi "duns_data"
+    13	15:37	find . -name "*.sas"
+
+useful
+    14	15:37	find . -name "*.sas" -exec grep -Hi "duns_data" {} \;
+    16	15:38	find . -name "*.sas" -exec grep -Hi --color=always "duns_data" {} \;
+    17	15:38	find . -name "*.sas" -exec grep -Hi --color=always "duns_data" {} \; > duns_data.log
+    19	15:39	reset
+    20	15:39	find . -name "*.sas" -exec grep -Hin --color=always "duns_data" {} \; > duns_data.log
+    23	15:40	find . -name "*.sas" -exec grep -Hin --color=always -m1 "duns_data" {} \; > duns_data.log
+    24	15:40	wc -l duns_data.log
+    25	15:40	more duns_data.log
+    26	15:40	pwd
+    27	15:41	find . -name "*.sas" -exec grep -Hin -m1 "duns_data" {} \; > duns_data.log
+    28	15:42	history > hist.log
+
+
+find . -name "*.sas" --exec grep -Hi "cp_premloss_hist_nolag"
+find . -name "*.sas" --exe grep -Hi "cp_premloss_hist_nolag"
+find . -name "*.sas" -exec grep -Hi "cp_premloss_hist_nolag"
+find . -name "*.sas" -exec grep -Hi "cp_premloss_hist_nolag"{} \
+find . -name "*.sas" -exec grep -Hi --color=always "cp_premloss_hist_nolag" {} \;
+find . -name "*.sas" -exec grep -Hin -m1 "cp_premloss_hist_nolag" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "ges_loc_for_shaoli" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "ges_pol_for__shaoli" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "USC_CP_LOCATIONS_12_17" {} \; > hist.log
+
+
+cd /SASHome/ccu04/Non-Cat/XiaoD/code
+find . -name "*.sas" -exec grep -Hin -m1 "ppd_ah_lex_02" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "ACDEVELOP" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "ADEVELOP" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "aprod" {} \; > hist.log
+
+cd /SASHome/ccu04/Non-Cat
+cd /SASHome/ccu04/Non-Cat/XiaoD
+cd /SASHome/ccu04/Non-Cat
+find . -name "*.sas" -exec grep -Hin -m1 "ges_exp_051219" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "ODBC" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "ADEVELOP" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "CP_IBNR_TABLE_AAL" {} \; > hist.log
+find . -name "*.sas" -exec grep -Hin -m1 "VPD" {} \; > hist.log
+
+find . -name "*.sas" -exec grep -Hin -m1 "cdh_claims_060519" {} \; > hist.log
+
+find . -name "*.sas" -exec grep -Hin -m1 "GES_geo_09172020" {} \; > hist.log
+
+
+MTC
+
+
+
+CATASTROPHE_FAMILY_NM
+
+
+change owner right
+ -type d -exec chmod g+x {} \;
+
+find XiaoD -type d -exec chmod g+x {} \;
+find XiaoD -type d -exec chmod g-x {} \;
+
+
+=======================================================
+sasgsub -gridwaitresults -gridsubmitpgm a.sas &
+  162  /SASHome/nfs/sasconfig/Lev4/Applications/SASGridManagerClientUtility/9.4/sasgsub  -gridwaitresults -gridsubmitpgm a.sas &
+  163  bjobs
+  164  ls -lth
+  165  cat a.lst
+  166  /SASHome/nfs/lsf/predev/lsf/9.1/linux2.6-glibc2.3-x86_64/bin/bjobs
+  167  d
+  168  wd
+  169  s
+  170  ls
+  171  ls
+  172  ls
+  173  story
+  174  history
+[u5275781@plccasam1sgba01 ~]$ cp
+Message from u5280139@plccasam1sgba01 on pts/28 at 14:10 ...
+/SASHome/saswork0/gridwork/Lev4/bash_profile
+EOF
+
+cp: missing file operand
+Try `cp --help' for more information.
+[u5275781@plccasam1sgba01 ~]$ pwd
+/home/u5275781
+[u5275781@plccasam1sgba01 ~]$ cp /SASHome/saswork0/gridwork/Lev4/bash_profile .
+[u5275781@plccasam1sgba01 ~]$ mv bash_profile  .bash_profile
+[u5275781@plccasam1sgba01 ~]$ [u5275781@plccasam1sgba01 ~]$ cp
+EOF
+-bash: [u5275781@plccasam1sgba01: command not found
+[u5275781@plccasam1sgba01 ~]$ Message from u5280139@plccasam1sgba01 on pts/28 at 14:10 ...
+-bash: Message: command not found
+[u5275781@plccasam1sgba01 ~]$ /SASHome/saswork0/gridwork/Lev4/bash_profile
+-bash: /SASHome/saswork0/gridwork/Lev4/bash_profile: No such file or directory
+[u5275781@plccasam1sgba01 ~]$ EOF
+-bash: EOF: command not found
+[u5275781@plccasam1sgba01 ~]$
+[u5275781@plccasam1sgba01 ~]$ cp: missing file operand
+-bash: cp:: command not found
+[u5275781@plccasam1sgba01 ~]$ Try `cp --help' for more information.
+> [u5275781@plccasam1sgba01 ~]$ pwd
+> /home/u5275781
+> [u5275781@plccasam1sgba01 ~]$ cp /SASHome/saswork0/gridwork/Lev4/bash_profile .
+> [u5275781@plccasam1sgba01 ~]$ mv bash_profile  .bash_profile
+> [u5275781@plccasam1sgba01 ~]$
+
+
+
+
+
+
+[u5275781@plccasam1sgba01 ~]$ pwd
+/SASHome/home/u5275781
+[u5275781@plccasam1sgba01 ~]$ cd /home/u5275781
+[u5275781@plccasam1sgba01 u5275781]$ emacs .bash_profile
+[u5275781@plccasam1sgba01 u5275781]$ bjobs
+JOBID   USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME
+623368  u527578 RUN   normal     plccasam1sg plccasam1sg *0020604AD Feb  7 13:06
+623215  u527578 RUN   normal     plccasam1sg plccasam1sg *C1433A0AC Feb  7 07:38
+[u5275781@plccasam1sgba01 u5275781]$ bjobs -l
+
+Job <623368>, Job Name <SAS Enterprise Guide_SASApp - Workspace Server_8CBE11AF
+                     -8B38-0C46-AE42-37F0020604AD>, User <u5275781>, Project <d
+                     efault>, Status <RUN>, Queue <normal>, Command </SASHome/n
+                     fs/sasconfig/Lev4/SASApp/WorkspaceServer/WorkspaceServer.s
+                     h -noterminal -netencryptalgorithm SASProprietary -metaser
+                     ver plccmrsgmc01.r1-core.r1.aig.net -metaport 8564 -metare
+                     pository Foundation -locale en_US -objectserver -objectser
+                     verparms "delayconn sph=plccasam1sgn04.r1-core.r1.aig.net
+                     protocol=bridge spawned spp=45256 cid=5215 pb classfactory
+                     =440196D4-90F0-11D0-9F41-00A024BB830C server=OMSOBJ:SERVER
+                     COMPONENT/A5JS4DZ0.AY000008 cel=credentials lb recon grid
+                     keepalive=5" -METAUSER '"u5275781@!*(generatedpassworddoma
+                     in)*!"' -METAPASS 4834597c9b6715247810F72073526509 >
+Wed Feb  7 13:06:14: Submitted from host <plccasam1sgn04>, CWD <$HOME>, Specifi
+                     ed Hosts <plccasam1sgn01.r1-core.r1.aig.net>, <plccasam1sg
+                     n02.r1-core.r1.aig.net>, <plccasam1sgn03.r1-core.r1.aig.ne
+                     t>, <plccasam1sgn04.r1-core.r1.aig.net>, <plccasam1sgn05.r
+                     1-core.r1.aig.net>, <plccasam1sgn06.r1-core.r1.aig.net>, <
+                     plccasam1sgn07.r1-core.r1.aig.net>, <plccasam2sgn01.r1-cor
+                     e.r1.aig.net>, <plccasam2sgn02.r1-core.r1.aig.net>, <plcca
+                     ssgts01.r1-core.r1.aig.net>, <plccassgts02.r1-core.r1.aig.
+                     net>;
+Wed Feb  7 13:06:15: Started 1 Task(s) on Host(s) <plccasam1sgn02.r1-core.r1.ai
+                     g.net>, Allocated 1 Slot(s) on Host(s) <plccasam1sgn02.r1-
+                     core.r1.aig.net>, Execution Home </home/u5275781>, Executi
+                     on CWD </home/u5275781>;
+Wed Feb  7 14:12:26: Resource usage collected.
+                     The CPU time used is 9 seconds.
+                     MEM: 18 Mbytes;  SWAP: 1.3 Gbytes;  NTHREAD: 28
+                     PGID: 18246;  PIDs: 18246 18247 18249 18453
+
+
+ MEMORY USAGE:
+ MAX MEM: 18 Mbytes;  AVG MEM: 17 Mbytes
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -
+ loadStop    -     -     -     -       -     -    -     -     -      -      -
+
+ RESOURCE REQUIREMENT DETAILS:
+ Combined: select[type == any] order[r15s:pg]
+ Effective: select[type == any] order[r15s:pg]
+------------------------------------------------------------------------------
+
+Job <623215>, Job Name <SAS Enterprise Guide_SASApp - Workspace Server_AF80ADAD
+                     -D313-3B44-A479-98FC1433A0AC>, User <u5275781>, Project <d
+                     efault>, Status <RUN>, Queue <normal>, Command </SASHome/n
+                     fs/sasconfig/Lev4/SASApp/WorkspaceServer/WorkspaceServer.s
+                     h -noterminal -netencryptalgorithm SASProprietary -metaser
+                     ver plccmrsgmc01.r1-core.r1.aig.net -metaport 8564 -metare
+                     pository Foundation -locale en_US -objectserver -objectser
+                     verparms "delayconn sph=plccasam1sgn04.r1-core.r1.aig.net
+                     protocol=bridge spawned spp=45256 cid=4829 pb classfactory
+                     =440196D4-90F0-11D0-9F41-00A024BB830C server=OMSOBJ:SERVER
+                     COMPONENT/A5JS4DZ0.AY000008 cel=credentials lb recon grid
+                     keepalive=5" -METAUSER '"u5275781@!*(generatedpassworddoma
+                     in)*!"' -METAPASS 7ee57f3dF38CCe13d68D62387d660643 >
+Wed Feb  7 07:38:50: Submitted from host <plccasam1sgn04>, CWD <$HOME>, Specifi
+                     ed Hosts <plccasam1sgn01.r1-core.r1.aig.net>, <plccasam1sg
+                     n02.r1-core.r1.aig.net>, <plccasam1sgn03.r1-core.r1.aig.ne
+                     t>, <plccasam1sgn04.r1-core.r1.aig.net>, <plccasam1sgn05.r
+                     1-core.r1.aig.net>, <plccasam1sgn06.r1-core.r1.aig.net>, <
+                     plccasam1sgn07.r1-core.r1.aig.net>, <plccasam2sgn01.r1-cor
+                     e.r1.aig.net>, <plccasam2sgn02.r1-core.r1.aig.net>, <plcca
+                     ssgts01.r1-core.r1.aig.net>, <plccassgts02.r1-core.r1.aig.
+                     net>;
+Wed Feb  7 07:38:50: Started 1 Task(s) on Host(s) <plccasam1sgn03.r1-core.r1.ai
+                     g.net>, Allocated 1 Slot(s) on Host(s) <plccasam1sgn03.r1-
+                     core.r1.aig.net>, Execution Home </home/u5275781>, Executi
+                     on CWD </home/u5275781>;
+Wed Feb  7 14:12:38: Resource usage collected.
+                     The CPU time used is 67 seconds.
+                     MEM: 19 Mbytes;  SWAP: 1.5 Gbytes;  NTHREAD: 31
+                     PGID: 23609;  PIDs: 23609 23610 23612 23790
+
+
+ MEMORY USAGE:
+ MAX MEM: 19 Mbytes;  AVG MEM: 19 Mbytes
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -
+ loadStop    -     -     -     -       -     -    -     -     -      -      -
+
+ RESOURCE REQUIREMENT DETAILS:
+ Combined: select[type == any] order[r15s:pg]
+ Effective: select[type == any] order[r15s:pg]
+
+[u5275781@plccasam1sgba01 u5275781]$ clear
+[u5275781@plccasam1sgba01 u5275781]$ bjobs
+JOBID   USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME
+623368  u527578 RUN   normal     plccasam1sg plccasam1sg *0020604AD Feb  7 13:06
+623215  u527578 RUN   normal     plccasam1sg plccasam1sg *C1433A0AC Feb  7 07:38
+[u5275781@plccasam1sgba01 u5275781]$ pwd
+/home/u5275781
+[u5275781@plccasam1sgba01 u5275781]$ which ^C
+[u5275781@plccasam1sgba01 u5275781]$ sasgsub  -gridwaitresults -gridsubmitpgm a.sas &
+[1] 2180
+[u5275781@plccasam1sgba01 u5275781]$
+SAS Grid Manager Client Utility Version 9.43 (build date: Jun  3 2015)
+Copyright (C) 2009-2014, SAS Institute Inc., Cary, NC, USA. All Rights Reserved
+Job <623410> is submitted to default queue <normal>.
+Job ID:         623410
+Job directory: "/SASHome/saswork0/gridwork/Lev4/u5275781/SASGSUB-2018-02-07_14.14.42.236_a"
+Job log file:  "/SASHome/saswork0/gridwork/Lev4/u5275781/SASGSUB-2018-02-07_14.14.42.236_a/a.log"
+Waiting for grid job to complete...
+
+[u5275781@plccasam1sgba01 u5275781]$ bjobs
+JOBID   USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME
+623368  u527578 RUN   normal     plccasam1sg plccasam1sg *0020604AD Feb  7 13:06
+623215  u527578 RUN   normal     plccasam1sg plccasam1sg *C1433A0AC Feb  7 07:38
+623410  u527578 PEND  normal     plccasam1sg             a          Feb  7 14:14
+[u5275781@plccasam1sgba01 u5275781]$ Grid job complete.
+  623410 (a) is Finished:  Submitted: 07Feb2018:14:14:42, Started: 07Feb2018:20:14:43 on Host plccasam1sgn03.r1-core.r1.aig.net, Ended: 07Feb2018:20:14:44, RC:0
+    Moving job information to "./SASGSUB-2018-02-07_14.14.42.236_a"
+
+    Copying log and output to current directory.
+Grid job return code is 0 (0x0)
+
+[1]+  Done                    sasgsub -gridwaitresults -gridsubmitpgm a.sas
+[u5275781@plccasam1sgba01 u5275781]$ bjobs
+JOBID   USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME
+623368  u527578 RUN   normal     plccasam1sg plccasam1sg *0020604AD Feb  7 13:06
+623215  u527578 RUN   normal     plccasam1sg plccasam1sg *C1433A0AC Feb  7 07:38
+[u5275781@plccasam1sgba01 u5275781]$ cat .bash_profile
+#.bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin:/SASHome/nfs/sasconfig/Lev4/Applications/SASGridManagerClientUtility/9.4
+export PATH
+
+source /SASHome/nfs/lsf/predev/lsf/conf/profile.lsf
+
+#export HOME=/SASHome/home/$LOGNAME
+#cd $HOME
+
+#-------------------
+# Personnal Aliases
+#-------------------
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+[u5275781@plccasam1sgba01 u5275781]$ pwd
+/home/u5275781
+
+
+
+cd /SASHome/ccu04/Non-Cat/CP_Model_Update/Claims-locations_matching/XD
+sasgsub  -gridwaitresults -gridsubmitpgm SIC_P_S.sas &
+bjobs
+bkill jobid 777092
+
+
+cd /SASHome/ccu04/Non-Cat/XiaoD/code/AQI/2018H2/code
+sasgsub  -gridwaitresults -gridsubmitpgm aqi_llpl_v2.sas &
+
+
+cd /SASHome/ccu04/Non-Cat/XiaoD/code
+
+cd /SASHome/ccu04/Non-Cat/XiaoD/code/Property/aig_claim 
+
+sasgsub  -gridwaitresults -gridsubmitpgm CDH_Claims.sas &
+
+sasgsub  -gridwaitresults -gridsubmitpgm CDH_Incurred_Report_Admitted.sas &
+
+sasgsub  -gridwaitresults -gridsubmitpgm br_test.sas &
+
+sasgsub  -gridwaitresults -gridsubmitpgm CDH_Claims_02.sas & 
+
+bkill 777092
